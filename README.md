@@ -1,5 +1,5 @@
 # Nanos  ![](./screenshots/nanos.jpg)  
-[![Release]](https://github.com/bashar-saleh/gonanos/releases)
+![Release](https://github.com/bashar-saleh/gonanos/releases)
 Nanos is a library written in go. it helps you to build high concurrent choreographed monolithic system.
 
 
