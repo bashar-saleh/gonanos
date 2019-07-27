@@ -1,4 +1,4 @@
-package basic
+package basic_example
 
 import (
 	"gnanos/nanos"
@@ -7,13 +7,13 @@ import (
 )
 
 
-func NewBasicNanos(
+func newBasicNanos(
 	workersMaxCount int,
 	taskQueueCapacity int,
 
 	)  chan nanos.Message{
 
-	worker := SomeWork{}
+	worker := someWork{}
 	myNanos := nanos.Nanos{
 		Worker:worker,
 		TaskQueueCapacity:taskQueueCapacity,
@@ -26,12 +26,12 @@ func NewBasicNanos(
 
 
 
-type SomeWork struct {}
+type someWork struct {}
 
-func (w SomeWork) Work(msg nanos.Message)  {
+func (w someWork) Work(msg nanos.Message)  {
 
 	// Do The Work
-	log.Println("[SomeWork] working on task")
+	log.Println("[someWork] working on task")
 	time.Sleep(time.Second * 1)
 
 

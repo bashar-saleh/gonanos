@@ -8,7 +8,7 @@ import (
 	"time"
 )
 
-func LoggingNanos(
+func loggingNanos(
 	workersMaxCount int,
 	taskQueueCapacity,
 	panicsMax int,

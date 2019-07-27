@@ -1,4 +1,4 @@
-package basic
+package basic_example
 
 import (
 	"fmt"
@@ -6,11 +6,11 @@ import (
 )
 
 // just change the function name to Main and run it from your main package main function
-func Main() {
+func main() {
 
-	basicNanosMailBox := NewBasicNanos(8, 2000)
+	basicNanosMailBox := newBasicNanos(8, 2000)
 
-	basicNanos_2MailBox := NewBasicNanos_2(8,1500, basicNanosMailBox)
+	basicNanos_2MailBox := newBasicNanos_2(8,1500, basicNanosMailBox)
 
 	basicNanos_2MailBox <- nanos.Message{Content:[]byte(" ")}
 

@@ -9,7 +9,7 @@ import (
 func main() {
 
 	// 8 workers = 8 files because we can't make more than one goroutine writing to the same file
-	loggingNanos := LoggingNanos(8, 1000, 8, "logfile")
+	loggingNanos := loggingNanos(8, 1000, 8, "logfile")
 
 	for i:=0 ; i< 100 ; i++ {
 	  loggingNanos <- nanos.Message{Content:[]byte("Hello World")}
