@@ -6,5 +6,5 @@ Nanos is a library written in go. it helps you to build high concurrent choreogr
 
 checkout the examples folder to know more.
 
-##installiation
+## Installiation
 `$ go get -u "github.com/bashar-saleh/gonanos@v0.0.1"`
