@@ -1,7 +1,7 @@
 package basic_example
 
 import (
-	"gnanos/nanos"
+	"gonanos/nanos"
 	"log"
 	"time"
 )

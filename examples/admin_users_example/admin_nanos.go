@@ -1,7 +1,7 @@
 package admin_users_example
 
 import (
-	"gnanos/nanos"
+	"gonanos/nanos"
 	"log"
 	"time"
 )

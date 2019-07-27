@@ -2,7 +2,7 @@ package nanos
 
 import (
 	"fmt"
-	"gnanos/nanos"
+	"gonanos/nanos"
 )
 
 // just change the function name to Main and run it from your main package main function

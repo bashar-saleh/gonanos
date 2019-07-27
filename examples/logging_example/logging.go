@@ -1,7 +1,7 @@
 package nanos
 
 import (
-	"gnanos/nanos"
+	"gonanos/nanos"
 	"log"
 	"os"
 	"strconv"
