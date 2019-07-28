@@ -35,6 +35,7 @@ func (w usersWorker) Work(msg nanos.Message) {
 
 	select {
 	case msg.ResTo <- nanos.Message{Content: []byte("User name is Bashar")}:
+		return
 	default:
 		return
 	}

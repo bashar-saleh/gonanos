@@ -39,6 +39,7 @@ func (w someWork) Work(msg nanos.Message)  {
 
 	select {
 	case msg.ResTo <- nanos.Message{Content: []byte("SomeResult")}:
+		return
 	default:
 		return
 	}
