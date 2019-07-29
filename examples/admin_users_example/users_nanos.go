@@ -1,7 +1,7 @@
 package admin_users_example
 
 import (
-	"gonanos/nanos"
+	"github.com/bashar-saleh/gonanos/nanos"
 	"log"
 	"time"
 )
@@ -9,13 +9,13 @@ import (
 func newUsersNanos(
 	workersMaxCount int,
 	taskQueueCapacity int,
-	) chan nanos.Message {
+) chan nanos.Message {
 
-	worker:= usersWorker{}
+	worker := usersWorker{}
 	myNanos := nanos.Nanos{
-		Worker:worker,
-		TaskQueueCapacity:taskQueueCapacity,
-		WorkersMaxCount:workersMaxCount,
+		Worker:            worker,
+		TaskQueueCapacity: taskQueueCapacity,
+		WorkersMaxCount:   workersMaxCount,
 	}
 	return myNanos.TasksChannel()
 }
@@ -26,8 +26,6 @@ func (w usersWorker) Work(msg nanos.Message) {
 
 	// unmarshal msg
 	user_id := "user_1"
-
-
 
 	// Do the work
 	log.Println("[UsersNanos] Searching for user with id " + user_id)

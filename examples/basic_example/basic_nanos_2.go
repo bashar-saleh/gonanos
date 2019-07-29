@@ -1,7 +1,7 @@
 package basic_example
 
 import (
-	"gonanos/nanos"
+	"github.com/bashar-saleh/gonanos/nanos"
 	"log"
 	"time"
 )

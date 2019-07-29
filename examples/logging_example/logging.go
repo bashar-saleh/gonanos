@@ -1,7 +1,7 @@
 package nanos
 
 import (
-	"gonanos/nanos"
+	"github.com/bashar-saleh/gonanos/nanos"
 	"log"
 	"os"
 	"strconv"
